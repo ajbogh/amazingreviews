@@ -35,5 +35,13 @@
   },
   "devDependencies": {
     "heroku": "^7.19.4"
-  }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/jontewks/puppeteer-heroku-buildpack.git"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
 }
