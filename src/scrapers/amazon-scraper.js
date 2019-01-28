@@ -10,6 +10,7 @@ const url = argv.url || config.url;
   // console.time('Time to completion');
   let allReviews = [];
   const pageTimes = [];
+  
   const browser = await puppeteer.launch({ 
     headless: true,
     dumpio: true,
