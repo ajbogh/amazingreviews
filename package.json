@@ -1,0 +1,39 @@
+{
+  "name": "amazingreviews",
+  "version": "1.0.0",
+  "description": "Use a Amazon product URL to scrape the reviews and return them to the requestor.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy-now": "now && now alias && now rm amazingreviews --safe --yes",
+    "deploy-heroku": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amazon-scraper": "0.0.4",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "mathjs": "^5.3.0",
+    "puppeteer": "^1.10.0",
+    "sentiment": "^5.0.1",
+    "yargs": "^12.0.5"
+  },
+  "engines": {
+    "node": "10.5.0"
+  },
+  "files": [
+    "src/**/*"
+  ],
+  "now": {
+    "engines": {
+      "node": "10.5.0"
+    }
+  },
+  "devDependencies": {
+    "heroku": "^7.19.4"
+  }
+}
