@@ -3,14 +3,13 @@ const argv = require('yargs').argv;
 const math = require('mathjs');
 
 const config =  require('../../config');
-
 const url = argv.url || config.url;
 
 (async () => {
   // console.time('Time to completion');
   let allReviews = [];
   const pageTimes = [];
-  
+
   const browser = await puppeteer.launch({ 
     headless: true,
     dumpio: true,
