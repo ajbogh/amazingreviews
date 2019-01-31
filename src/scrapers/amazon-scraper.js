@@ -1,9 +1,8 @@
 const puppeteer = require('puppeteer');
 const argv = require('yargs').argv;
-const math = require('mathjs');
+// const math = require('mathjs');
 
-const config =  require('../../config');
-const url = argv.url || config.url;
+const url = argv.url;
 
 (async () => {
   // console.time('Time to completion');
